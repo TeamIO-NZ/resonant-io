@@ -20,13 +20,16 @@ import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
+import tech.teamio.resonantio.api.energy.WireConnectable;
+import tech.teamio.resonantio.api.energy.WireNetwork;
 import tech.teamio.resonantio.blocks.blockentities.CoalGeneratorBlockEntity;
 
 import java.util.Random;
 
 
-public class CoalGeneratorBlock extends Block implements BlockEntityProvider {
+public class CoalGeneratorBlock extends Block implements BlockEntityProvider, WireConnectable {
 
     private static final BooleanProperty active = BooleanProperty.of("active");
     private static final DirectionProperty facing = Properties.HORIZONTAL_FACING;
@@ -81,5 +84,10 @@ public class CoalGeneratorBlock extends Block implements BlockEntityProvider {
         return this.getDefaultState()
                 .with(active, false)
                 .with(facing, ctx.getPlayerFacing().getOpposite());
+    }
+
+    @Override
+    public WireNetwork.WireConnectionType canConnect(IWorld world, Direction direction, BlockPos target, BlockPos source) {
+        return WireNetwork.WireConnectionType.ENERGY_OUTPUT;
     }
 }

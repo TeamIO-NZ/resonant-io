@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "resonantio:block/silicone_refinery_front",
+    "up": "resonantio:block/silicone_refinery_top",
+    "down": "resonantio:block/silicone_refinery_bottom",
+    "west": "resonantio:block/silicone_refinery_side",
+    "east": "resonantio:block/silicone_refinery_side",
+    "south": "resonantio:block/silicone_refinery_side",
+    "particle": "resonantio:block/silicone_refinery_side"
+  }
+}

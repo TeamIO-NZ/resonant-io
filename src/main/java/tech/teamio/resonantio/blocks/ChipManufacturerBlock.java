@@ -6,6 +6,8 @@ import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.Material;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.world.BlockView;
+import tech.teamio.resonantio.blocks.blockentities.ChipManufacturerBlockEntity;
+import tech.teamio.resonantio.blocks.blockentities.CoalGeneratorBlockEntity;
 
 public class ChipManufacturerBlock extends Block implements BlockEntityProvider {
 
@@ -15,6 +17,7 @@ public class ChipManufacturerBlock extends Block implements BlockEntityProvider 
 
     @Override
     public BlockEntity createBlockEntity(BlockView view) {
-        return null;
+        return new ChipManufacturerBlockEntity();
     }
+
 }

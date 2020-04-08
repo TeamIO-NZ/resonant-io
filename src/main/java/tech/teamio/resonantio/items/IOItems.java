@@ -70,5 +70,10 @@ public static Item SOLDER = Registry.register(
             new Identifier(ModConstants.MOD_ID, "resistor_pack"),
             new Item(new Item.Settings().group(ResonantIO.CREATIVE_GROUP))
     );
+    public static Item IC = Registry.register(
+            Registry.ITEM,
+            new Identifier(ModConstants.MOD_ID, "ic"),
+            new Item(new Item.Settings().group(ResonantIO.CREATIVE_GROUP))
+    );
     public static void init() {}
 }

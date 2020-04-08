@@ -1,0 +1,36 @@
+{
+  "variants": {
+    "active=false,facing=north": {
+      "model": "resonantio:block/silicone_refinery",
+      "y": 0
+    },
+    "active=false,facing=east": {
+      "model": "resonantio:block/silicone_refinery",
+      "y": 90
+    },
+    "active=false,facing=south": {
+      "model": "resonantio:block/silicone_refinery",
+      "y": 180
+    },
+    "active=false,facing=west": {
+      "model": "resonantio:block/silicone_refinery",
+      "y": 270
+    },
+    "active=true,facing=north": {
+      "model": "resonantio:block/silicone_refinery_on",
+      "y": 0
+    },
+    "active=true,facing=east": {
+      "model": "resonantio:block/silicone_refinery_on",
+      "y": 90
+    },
+    "active=true,facing=south": {
+      "model": "resonantio:block/silicone_refinery_on",
+      "y": 180
+    },
+    "active=true,facing=west": {
+      "model": "resonantio:block/silicone_refinery_on",
+      "y": 270
+    }
+  }
+}

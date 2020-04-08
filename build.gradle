@@ -38,6 +38,12 @@ dependencies {
 	modApi "blue.endless:jankson:1.2.0"
 
 	modImplementation("mcp.mobius.waila:Hwyla:1.15.2-1.9.21-72")
+
+	modImplementation("io.github.cottonmc:cotton-energy:1.5.0+1.14.3-SNAPSHOT") { transitive = false }
+	modImplementation("alexiil.mc.lib:libblockattributes-core:0.6.6")
+
+	modApi 'teamreborn:energy:0.1.0'
+	include 'teamreborn:energy:0.1.0'
 }
 
 processResources {

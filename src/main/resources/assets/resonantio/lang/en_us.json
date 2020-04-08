@@ -7,6 +7,8 @@
   "block.resonantio.coal_generator": "Coal \"ol' faithful\" Generator",
   "block.resonantio.solder_bench": "Solder Bench",
   "block.resonantio.silicone_refinery": "Silicone Refinery",
+  "block.resonantio.wire": "Wire",
+  "block.resonantio.chip_manufacturer": "Chip Manufacturer",
 
   "item.resonantio.tin_pickaxe": "Tin Pickaxe",
   "item.resonantio.tin_ingot": "Tin Ingot",
@@ -14,5 +16,8 @@
   "item.resonantio.lead_ingot": "Lead Ingot",
   "item.resonantio.silicone_ingot": "Silicone Ingot",
   "item.resonantio.plastic_ingot": "Plastic",
-  "item.resonantio.silica_dust": "Silica Dust"
+  "item.resonantio.silica_dust": "Silica Dust",
+  "item.resonantio.solder": "Solder",
+  "item.resonantio.resistor_pack": "Resistor Pack",
+  "item.resonantio.ic": "IC"
 }
