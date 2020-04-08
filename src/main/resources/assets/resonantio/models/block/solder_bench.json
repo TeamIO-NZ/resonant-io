@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "resonantio:block/solder_bench_front",
+    "south" : "resonantio:block/solder_bench_front",
+    "east" : "resonantio:block/solder_bench_side",
+    "west" : "resonantio:block/solder_bench_side",
+    "up" : "resonantio:block/solder_bench_top",
+    "down" : "resonantio:block/solder_bench_bottom",
+    "particle": "resonantio:block/solder_bench_front"
+  }
+}

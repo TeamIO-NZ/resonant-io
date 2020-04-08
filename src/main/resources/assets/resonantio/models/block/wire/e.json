@@ -1,0 +1,84 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "resonantio:block/wire",
+		"particle": "resonantio:block/wire"
+	},
+	"elements": [
+		{
+			"name": "pos-main",
+			"from": [4, 1, 4],
+			"to": [6, 4, 6],
+			"faces": {
+				"north": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"east": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"south": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"west": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"up": {"uv": [14, 0, 16, 2], "texture": "#0"},
+				"down": {"uv": [14, 0, 16, 2], "texture": "#0"}
+			}
+		},
+		{
+			"name": "neg-north",
+			"from": [6, 1, 4],
+			"to": [16, 4, 6],
+			"faces": {
+				"north": {"uv": [0, 13, 10, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 3], "texture": "#0"},
+				"south": {"uv": [0, 13, 10, 16], "texture": "#0"},
+				"west": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"up": {"uv": [14, 0, 16, 10], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [14, 0, 16, 10], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"name": "neg-east",
+			"from": [12, 1, 10],
+			"to": [16, 4, 12],
+			"faces": {
+				"north": {"uv": [0, 13, 4, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 3], "texture": "#0"},
+				"south": {"uv": [0, 13, 4, 16], "texture": "#0"},
+				"west": {"uv": [0, 13, 2, 16], "texture": "#0"},
+				"up": {"uv": [14, 0, 16, 3], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [14, 0, 16, 4], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "neg-main",
+			"from": [10, 1, 10],
+			"to": [12, 4, 12],
+			"faces": {
+				"north": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"east": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"south": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"west": {"uv": [14, 0, 16, 3], "texture": "#0"},
+				"up": {"uv": [14, 0, 16, 2], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [14, 0, 16, 2], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "positive",
+			"origin": [8, 8, 8],
+			"children": [0,
+				{
+					"name": "pos-east",
+					"origin": [8, 8, 8],
+					"children": []
+				}
+			]
+		},
+		{
+			"name": "negitive",
+			"origin": [8, 8, 8],
+			"children": [
+				{
+					"name": "neg-west",
+					"origin": [8, 8, 8],
+					"children": []
+				}, 1, 2, 3]
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+  "itemGroup.resonantio.item_group": "Resonant io",
+
+  "block.resonantio.lead_ore": "Galena",
+  "block.resonantio.tin_ore": "Cassiterite",
+  "block.resonantio.copper_ore": "Cuprite",
+  "block.resonantio.coal_generator": "Coal \"ol' faithful\" Generator",
+  "block.resonantio.solder_bench": "Solder Bench",
+  "block.resonantio.silicone_refinery": "Silicone Refinery",
+
+  "item.resonantio.tin_pickaxe": "Tin Pickaxe",
+  "item.resonantio.tin_ingot": "Tin Ingot",
+  "item.resonantio.copper_ingot": "Copper Ingot",
+  "item.resonantio.lead_ingot": "Lead Ingot",
+  "item.resonantio.silicone_ingot": "Silicone Ingot",
+  "item.resonantio.plastic_ingot": "Plastic",
+  "item.resonantio.silica_dust": "Silica Dust"
+}

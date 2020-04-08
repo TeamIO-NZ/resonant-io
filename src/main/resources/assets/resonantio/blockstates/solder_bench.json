@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "resonantio:block/solder_bench"
+    }
+  }
+}

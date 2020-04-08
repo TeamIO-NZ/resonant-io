@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "north": "resonantio:block/coal_generator_front_on",
+    "up": "resonantio:block/coal_generator_top",
+    "down": "resonantio:block/coal_generator_top",
+    "west": "resonantio:block/coal_generator_side_on",
+    "east": "resonantio:block/coal_generator_side_on",
+    "south": "resonantio:block/coal_generator_back"
+  }
+}

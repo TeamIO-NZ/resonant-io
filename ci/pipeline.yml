@@ -1,0 +1,66 @@
+---
+resource_types:
+  - name: gradle-cache
+    type: docker-image
+    source: {repository: projectfalcon/gradle-cache-resource, tag: latest}
+
+resources:
+  - name: resonant-io-repo
+    type: git
+    source: &resonant-io-source
+      uri: https://github.com/TeamIO-NZ/resonant-io
+  - name: resonant-io-cache
+    type: gradle-cache
+    source:
+      <<: *resonant-io-source
+      paths:
+        - build.gradle
+
+jobs:
+  - name: check
+    plan:
+      - get: resonant-io-repo
+        trigger: true
+      - get: resonant-io-cache
+      - task: check
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: {repository: java, tag: '8'}
+          inputs:
+            - name: resonant-io-repo
+            - name: resonant-io-cache
+          params:
+            GRADLE_USER_HOME: ../resonant-io-cache/.gradle
+            TERM: dumb
+          run:
+            dir: resonant-io-repo
+            path: ./gradlew
+            args:
+              - check
+
+  - name: build
+    plan:
+      - get: resonant-io-repo
+        passed: [check]
+        trigger: true
+      - get: resonant-io-cache
+        passed: [check]
+      - task: build
+        config:
+          platform: linux
+          image_resource:
+            type: docker-image
+            source: {repository: java, tag: '8'}
+          inputs:
+            - name: resonant-io-repo
+            - name: resonant-io-cache
+          params:
+            GRADLE_USER_HOME: ../resonant-io-cache/.gradle
+            TERM: dumb
+          run:
+            dir: resonant-io-repo
+            path: ./gradlew
+            args:
+              - build

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "resonantio",
+  "version": "${version}",
+
+  "name": "Resonant IO",
+  "description": "",
+  "authors": [
+    "Team io"
+  ],
+  "contact": {
+    "homepage": "https://teamio.tech"
+  },
+
+  "license": "GPL-3.0-or-later",
+  "icon": "assets/resonantio/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "tech.teamio.resonantio.ResonantIO" ],
+    "client": [ "tech.teamio.resonantio.ResonantIOClient" ]
+  },
+  "mixins": [
+    "resonantio.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "depends": {
+    "cloth-config2": "*"
+  },
+  "recommends": {
+    "roughlyenoughitems": "*",
+    "modmenu": "*"
+  }
+}
